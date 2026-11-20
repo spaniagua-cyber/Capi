@@ -51,38 +51,169 @@
 
 <main>
 
-    <!============ SECCION DEL HERO =================--!>
-      <section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Compartiendo la artesania mexicana</p>
-          <h1>capi</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
-
-
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
-
-
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
-        </div>
-
-
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
-        </div>
-      </div>
+    <!--============ SECCION DEL HERO =================-->
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDOS A CAPI</p>
+      <h1 class="intro-title" id="intro-title">COMPARTAMOS<br><span>ARTESANÍA</span></h1>
+      <p class="intro-description">Transmite la cultura mexicana en la comodiad de tu hogar</p>
     </section>
+      
+
+
+    <!-- Aqui vamos a colocar el video y las dos imagenes-->
+
+       <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/herovid.mp4"
+          aria-label="Video de presentación">
+          <source src="img/herovid.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> CAPI</p>
+          <h2 class="media-card__title">UN VISTAZO<br> A LA ARTESANIA</h2>
+          <a class="media-card__link" href="#contacto"> VER MÁS <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/hero1.png"
+          alt="Comedor hecho con muebles estilo artesanal mexicano"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">COMEDOR</p>
+          <h2 class="media-card__title">REUNE A TU FAMILIA<br>CON CULTURA</h2>
+          <a class="media-card__link" href="#contacto">Arma tu comedor <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/hero2.png"
+          alt="Sala lujosa con muebles artesanales"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">MUEBLES</p>
+          <h2 class="media-card__title">CONSTRUYE<br>TU PROPIO ESPACIO</h2>
+          <a class="media-card__link" href="#contacto">descubir muebles <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section> <!-- FIN DEL HERO-->
+
+   <!-- SECCIÓN PRODUCTOS--> 
+
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Conecta con México y su cultura</p>
+          <h2>Conoce nuestros productos</h2>
+          <p class="lead">Muebles hechos con artesanía mexicana en la puerta de tu casa</p>
+        </div>
+
+        <!-- PRODUCTO 1- TARJETA -->
+    <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/mueble.jpg" alt="Madera turquesa envejecida con tallado de época.">
+            <div class="product-body">
+              <span class="tag">Nuevo producto</span>
+              <h3>Trastero Azul Hacienda</h3>
+              <p class="price">$12,500 MXN</p>
+              <p class="description">Mueble de guardado de madera con acabado turquesa envejecido , puertas con relieve tallado y herrajes de estilo antiguo.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 2- TARJETA -->
+          
+          <article class="product-card reveal">
+            <img src="img/espejo.jpg" alt="Consola de madera con flores pintadas a mano en rojo y verde">
+            <div class="product-body">
+              <span class="tag">Nuevo producto</span>
+              <h3>Consola Rosa de Castilla</h3>
+              <p class="price">$14,500 MXN</p>
+              <p class="description">Consola de madera pintada a mano con motivos florales en rojo y verde, dos cajones y puertas laterales.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 3- TARJETA -->
+
+          <article class="product-card reveal">
+            <img src="img/mesa.jpg" alt="Mesa de centro de madera con marquetería de grecas geométricas">
+            <div class="product-body">
+              <span class="tag">Favoritos</span>
+              <h3>Mesa Greca</h3>
+              <p class="price">$8,900 MXN</p>
+              <p class="description">Mesa de centro de madera con tapa de marquetería y grecas geométricas en las orillas y las patas.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
 
 
 
+
+
+          </div>
+          </div>
+      </section>
 
 
 </main>
+
+<!-- ESTE ES EL FOOTER O PIE DE PÁGINA-->
+   <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> CAPI. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
 
 </body>
 </html>
