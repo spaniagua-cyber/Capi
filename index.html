@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- santiago paniagua valdes, trabajo pagina we CAPI-->
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
 
         <link rel="stylesheet" href="css/style.css">
 <title>CAPI | Muebles de madera: Artesania mexicana</title>
@@ -196,13 +200,155 @@
             </div>
           </article>
 
+          <!-- PRODUCTO 4- TARJETA -->
+          
+          <article class="product-card reveal">
+            <img src="img/cofre.jpg" alt="Buro estilo cofre con detalles artesanales">
+            <div class="product-body">
+              <span class="tag">Más vendidos</span>
+              <h3>Buro estilo cofre</h3>
+              <p class="price">$20,000 MXN</p>
+              <p class="description">Buro con dos cajones color madera con detalles negros y blancos hechos a mano.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 5- TARJETA -->
+          
+          <article class="product-card reveal">
+            <img src="img/silla.jpg" alt="Banca de madera con detalles artesanales">
+            <div class="product-body">
+              <span class="tag">Nuevo producto</span>
+              <h3>Banca Sol de Jalisco</h3>
+              <p class="price">$7,900 MXN</p>
+              <p class="description">Banca de madera ideal para recibidor o pie de cama, con grabados hechos a mano.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 6- TARJETA -->
+          
+          <article class="product-card reveal">
+            <img src="img/sillon.jpg" alt="illón de madera tallada con respaldo artesanal">
+            <div class="product-body">
+              <span class="tag">Productos destacados</span>
+              <h3>Sillón Tierra Viva</h3>
+              <p class="price">$12,800 MXN</p>
+              <p class="description">Sillón de madera maciza con respaldo tallado a mano y acabado natural.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+            </div>
+          </article>
+    </div>
+      </div>
+    </section>
+
+          <!-- seccion diferenciadores-->
+
+          <section id="diferenciador" class="unicos">
+          <div class="container">
+           <div class="section-heading reveal">
+              <h2>¿Por qué nosotros?</h2>
+          </div>
 
 
+        <div class="benefits-grid">
 
+          <!-- diferenciador 1 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="star"></i></div>
+            <h3>Madera de calidad</h3>
+            <p>Muebles resistentes, duraderos y pensados para durar generaciones.</p>
+          </article>
+
+          <!-- diferenciador 2 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="chart-no-axes-combined"></i></div>
+            <h3>Artesanía mexicana auténtica</h3>
+            <p>Cada mueble lleva detalles hechos a mano con técnicas y motivos tradicionales de México.</p>
+          </article>
+
+          <!-- diferenciador 3 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="sparkles"></i></div>
+            <h3>Diseño con identidad</h3>
+            <p>Mezcla de cultura mexicana y estilo para el hogar moderno.</p>
+          </article>
+
+          <!-- diferenciador 4 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="heart-handshake"></i></div>
+            <h3>Hecho en México</h3>
+            <p>Apoyo al trabajo artesanal local y a las tradiciones del país.</p>
+          </article>
 
           </div>
           </div>
-      </section>
+          </section>
+
+<!-- TESTIMONIOS, HISTORIAS, RESEÑAS, ETC -->
+
+ <section class="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">O P I N I O N E S</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+
+        <div class="testimonial-viewport">
+          <div id="testimonial-track" class="testimonial-track">
+
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/RM.jpg" alt="Retrato genérico de una mujer sonriente.">
+                  <div>
+                    <p class="name">Rodrigo Marquez.</p>
+                    <p class="occasion">Pedido a domicilio</p>
+                  </div>
+                </div>
+                <p class="quote">Mandé hacer la mesa a medida y quedó justo como la imaginé.
+                   La madera es muy sólida y los detalles tallados le dan mucho carácter."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/AA.webp" alt="Retrato genérico de una mujer sonriente.">
+                  <div>
+                    <p class="name">Alfredo Adame.</p>
+                    <p class="occasion">Pedido a meida</p>
+                  </div>
+                </div>
+                <p class="quote">Los colores son increíbles y no hay otra igual.
+                  Es un mueble con identidad mexicana que además es resistente."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/HS.jpg" alt="Retrato genérico de una mujer sonriente.">
+                  <div>
+                    <p class="name">Harry Styles.</p>
+                    <p class="occasion">Pedido de regalo</p>
+                  </div>
+                </div>
+                <p class="quote">La consola es preciosa.
+                   Se nota que las flores están pintadas a mano, y llegó muy bien empacada.</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+ </section>
 
 
 </main>
@@ -213,6 +359,8 @@
     <p>© <span id="current-year"></span> CAPI. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+  <script src="js/script.js"></script>
 
 
 </body>
