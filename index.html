@@ -166,11 +166,11 @@
           <article class="product-card reveal">
             <img src="img/mueble.jpg" alt="Madera turquesa envejecida con tallado de época.">
             <div class="product-body">
-              <span class="tag">Nuevo producto</span>
+              <span class="tag">Nuevo</span>
               <h3>Trastero Azul Hacienda</h3>
               <p class="price">$12,500 MXN</p>
               <p class="description">Mueble de guardado de madera con acabado turquesa envejecido , puertas con relieve tallado y herrajes de estilo antiguo.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Nuevo')">Más información</button>
             </div>
           </article>
 
@@ -179,11 +179,11 @@
           <article class="product-card reveal">
             <img src="img/espejo.jpg" alt="Consola de madera con flores pintadas a mano en rojo y verde">
             <div class="product-body">
-              <span class="tag">Nuevo producto</span>
+              <span class="tag">Recientes</span>
               <h3>Consola Rosa de Castilla</h3>
               <p class="price">$14,500 MXN</p>
               <p class="description">Consola de madera pintada a mano con motivos florales en rojo y verde, dos cajones y puertas laterales.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Recientes')">Más información</button>
             </div>
           </article>
 
@@ -196,7 +196,7 @@
               <h3>Mesa Greca</h3>
               <p class="price">$8,900 MXN</p>
               <p class="description">Mesa de centro de madera con tapa de marquetería y grecas geométricas en las orillas y las patas.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Favoritos')">Más información</button>
             </div>
           </article>
 
@@ -205,11 +205,11 @@
           <article class="product-card reveal">
             <img src="img/cofre.jpg" alt="Buro estilo cofre con detalles artesanales">
             <div class="product-body">
-              <span class="tag">Más vendidos</span>
+              <span class="tag">Vendidos</span>
               <h3>Buro estilo cofre</h3>
               <p class="price">$20,000 MXN</p>
               <p class="description">Buro con dos cajones color madera con detalles negros y blancos hechos a mano.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Vendidos')">Más información</button>
             </div>
           </article>
 
@@ -218,11 +218,11 @@
           <article class="product-card reveal">
             <img src="img/silla.jpg" alt="Banca de madera con detalles artesanales">
             <div class="product-body">
-              <span class="tag">Nuevo producto</span>
+              <span class="tag">Populares</span>
               <h3>Banca Sol de Jalisco</h3>
               <p class="price">$7,900 MXN</p>
               <p class="description">Banca de madera ideal para recibidor o pie de cama, con grabados hechos a mano.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Populares')">Más información</button>
             </div>
           </article>
 
@@ -231,11 +231,11 @@
           <article class="product-card reveal">
             <img src="img/sillon.jpg" alt="illón de madera tallada con respaldo artesanal">
             <div class="product-body">
-              <span class="tag">Productos destacados</span>
+              <span class="tag">Destacados</span>
               <h3>Sillón Tierra Viva</h3>
               <p class="price">$12,800 MXN</p>
               <p class="description">Sillón de madera maciza con respaldo tallado a mano y acabado natural.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Más información</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Destacados')">Más información</button>
             </div>
           </article>
     </div>
@@ -366,7 +366,9 @@
             <li><i data-lucide="instagram"></i> <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@capimx</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Capimx</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:s.paniagua@ebc.edu.mx">s.paniagua@ebc.edu.mx</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/JSYMn28ENrJ3cp549">Antara</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a Domingo, 10:00 a 17:00</li>
+            
           </ul>
         </aside>
       </div>
@@ -380,6 +382,144 @@
     <p>© <span id="current-year"></span> CAPI. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+  <!-- MODAL PARA LOS PRODUCTOS O SERVICIOS, ETC-->
+     <div id="modal-Nuevo" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Nuevo-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/mueble.jpg" alt="imagen de muble azul.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Nuevo')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Nuevo-title">Mueble azul</h2>
+        <p class="price">$12 500 MXN</p>
+        <p>Mueble de guardado de madera con acabado turquesa envejecido , puertas con relieve tallado y herrajes de estilo antiguo.</p>
+        <h3>Mueble de madera:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>Productos de limpieza</li>
+          <li>Descuento para proxima compra</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria pedir información sobre el mueble')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL PARA TARJETA DOS-->
+
+<div id="modal-Recientes" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Recientes-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/espejo.jpg" alt="imagen de consola.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Recientes')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Recientes-title">Consola de madera</h2>
+        <p class="price">$14 500 MXN</p>
+        <p>Consola de madera pintada a mano con motivos florales en rojo y verde, dos cajones y puertas laterales.</p>
+        <h3>Consola con colores brillantes:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>Decoracion para consola</li>
+          <li>Trapo para limpiar superficies</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria pedir la consola')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA TRES-->
+
+<div id="modal-Favoritos" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Favoritos-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/mesa.jpg" alt="imagen de consola.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Favoritos')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Favoritos-title">Mesa greca</h2>
+        <p class="price">$8 900 MXN</p>
+        <p>Mesa de centro de madera con tapa de marquetería y grecas geométricas en las orillas y las patas.</p>
+        <h3>Consola con colores brillantes:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>Decoracion para consola</li>
+          <li>Trapo para limpiar superficies</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria pedir la consola')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA CUATRO-->
+
+<div id="modal-Vendidos" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Vendidos-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/cofre.jpg" alt="imagen de cofre.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Vendidos')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Vendidos-title">Buro estilo cofre</h2>
+        <p class="price">$20 000 MXN</p>
+        <p>Buro con dos cajones color madera con detalles negros y blancos hechos a mano.</p>
+        <h3>Buro estilo cofre:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>Tapete para buro</li>
+          <li>Lampara pequeña</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria pedir el buro con el estilo del cofre')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA CINCO-->
+
+<div id="modal-Populares" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Populares-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/silla.jpg" alt="imagen de banca.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Populares')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Populares-title">banca</h2>
+        <p class="price">$7 900 MXN</p>
+        <p>Banca de madera ideal para recibidor o pie de cama, con grabados hechos a mano.</p>
+        <h3>Banca sol de jalisoco con colores brillantes:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>almohadas acordes a la banca</li>
+          <li>rodillo quita pelusas para la banca</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria saber la información de la banca')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA TARJETA SEIS-->
+
+<div id="modal-Destacados" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Destacados-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/sillon.jpg" alt="imagen de consola.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Destacados')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Destacados-title">Sillon</h2>
+        <p class="price">$12 800 MXN</p>
+        <p>Sillón de madera maciza con respaldo tallado a mano y acabado natural.</p>
+        <h3>Sillon tierra vivas:</h3>
+        <ul>
+          <li>Guia de cuidados</li>
+          <li>Decoracion para el sillon</li>
+          <li>Quita pelusas para el sillon y almohadas</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, Quiero saber información del sillon')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/script.js"></script>
 
